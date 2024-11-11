@@ -6,6 +6,8 @@ spring:
   datasource:
     username: root
     password: Binh!190998
+    url: jdbc:mysql://localhost:3307/store-book
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update
