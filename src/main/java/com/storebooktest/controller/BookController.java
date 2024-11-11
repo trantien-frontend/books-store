@@ -29,7 +29,7 @@ public class BookController {
     PaginationUtils paginationUtils;
 
     @GetMapping
-    public ResponseEntity<ApiResponse<PageDTO<Book>>> getBooks(@RequestParam(required = false, defaultValue = "0") String page, @RequestParam(required = false, defaultValue = "10") String limit) {
+    public ResponseEntity<ApiResponse<PageDTO<Book>>> getBooks(@RequestParam(required = false, defaultValue = "1") String page, @RequestParam(required = false, defaultValue = "5") String limit) {
         log.info("Start method getBooks in BookController with page={}, limit={}", page, limit);
         PageRequest pageRequest = paginationUtils.buildPageRequest(page, limit);
         PageDTO<Book> data = bookService.getBooks(pageRequest);
