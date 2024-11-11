@@ -35,8 +35,10 @@ Ensure you have the following installed:
    https://github.com/trantien-frontend/books-store.git
    cd book-management-api
 ```
-2. Set Up the Database
+2. Set Up the Database.
+
    2.1 Install MySQL and start the MySQL service if it's not already running.
+
    2.2 Create the database (e.g., bookstore)
    ``` sql
    create database `bookstore`; 
